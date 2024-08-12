@@ -57,10 +57,11 @@ const Contact = () => {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          alert('YOUR MESSAGE HAS BEEN SENT TO MAYANK SUCCESSFULLY!');
+          form.current.reset();
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          alert("Oops! Something went wrong. Please Try Again!" + error);
         },
       );
   };

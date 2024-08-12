@@ -1,5 +1,7 @@
 import React from "react";
+import { Navigate } from "react-router-dom";
 import styled from "styled-components";
+import { Bio } from "../../data/constants";
 
 const Card = styled.div`
   width: 330px;
@@ -66,7 +68,8 @@ const Date = styled.div`
 const Description = styled.div`
   font-weight: 400;
   color: ${({ theme }) => theme.text_secondary + 99};
-  overflow: hidden;
+  overflow: visible;
+  margin-bottom: 50px;
   margin-top: 8px;
   display: -webkit-box;
   max-width: 100%;
@@ -80,6 +83,7 @@ const Members = styled.div`
   padding-left: 10px;
 `;
 const Avatar = styled.img`
+  
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -96,7 +100,10 @@ const Button = styled.a`
 `;
 
 const ProjectCard = ({ project }) => {
+  
+
   return (
+    <a href={project.webapp} style={{textDecoration: "none"}} target="_blank" rel="noopener noreferrer">
     <Card>
       <Image src={project.image} />
       <Tags></Tags>
@@ -114,6 +121,7 @@ const ProjectCard = ({ project }) => {
         View Code
       </Button>
     </Card>
+    </a>
   );
 };
 
