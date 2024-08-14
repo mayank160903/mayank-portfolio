@@ -67,8 +67,7 @@ const Projects = () => {
             marginBottom: "40px",
           }}
         >
-          I have worked on a wide range of projects. From web apps to android
-          apps. Here are some of my projects.
+          I have worked on a wide range of projects during my Web Development learning process. Here are some of my projects.
         </Desc>
 
         <CardContainer>

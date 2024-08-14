@@ -7,6 +7,7 @@ import {Tilt} from "react-tilt";
 import {motion} from "framer-motion";
 import {headContainerAnimation, headContentAnimation, headTextAnimation} from "../../utils/motion"
 import StarCanvas from '../canvas/Stars';
+import { useState, useEffect } from 'react';
 
 const HeroContainer = styled.div`
 display: flex;
@@ -219,8 +220,33 @@ const HeroBg = styled.div`
   }
 `;
 
+const VisitCounter = styled.div`
+  margin-top: 20px;
+  font-size: 18px;
+  color: ${({ theme }) => theme.text_secondary};
+
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+`;
 
 const Hero = () => {
+  const [visitCount, setVisitCount] = useState(0);
+
+  useEffect(() => {
+    // Get the current count from localStorage
+    const visits = localStorage.getItem('visitCount');
+
+    if (visits) {
+      const newCount = parseInt(visits) + 1;
+      localStorage.setItem('visitCount', newCount);
+      setVisitCount(newCount);
+    } else {
+      // First visit
+      localStorage.setItem('visitCount', 1);
+      setVisitCount(1);
+    }
+  }, []);
   return (
     <div id="about">
       <HeroContainer>
@@ -254,6 +280,8 @@ const Hero = () => {
               <SubTitle>{Bio.description}</SubTitle>
             </motion.div>
             <ResumeButton href={Bio.resume}>Check Resume</ResumeButton>
+
+            <VisitCounter>Total Visits: {visitCount}</VisitCounter>
           </HeroLeftContainer>
           <HeroRightContainer>
             <motion.div {...headContainerAnimation}>
