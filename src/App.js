@@ -9,6 +9,7 @@ import StartCanvas from "./components/canvas/Stars";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
+import Achievements from "./components/sections/Achievements"
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -44,7 +45,7 @@ function App() {
             <Hero />
             <Wrapper>
               <Skills />
-              {/* <Experience /> */}
+              <Achievements />
             </Wrapper>
             <Projects />
             <Wrapper>

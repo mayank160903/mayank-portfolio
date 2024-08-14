@@ -4,7 +4,6 @@ import { Bio } from "../../data/constants";
 import {
     Code,
   GitHub,
-  Instagram,
   LinkedIn,
 } from "@mui/icons-material";
 
@@ -88,7 +87,7 @@ const Footer = () => {
         <Nav>
           <NavLink href="#About">About</NavLink>
           <NavLink href="#Skills">Skills</NavLink>
-          <NavLink href="#Experience">Experience</NavLink>
+          <NavLink href="#Achievements">Achievements</NavLink>
           <NavLink href="#Projects">Projects</NavLink>
           <NavLink href="#Education">Education</NavLink>
         </Nav>
@@ -98,9 +97,6 @@ const Footer = () => {
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.linkedin} target="display">
             <LinkedIn />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display">
-            <Instagram />
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.leetcode} target="display">
             <Code />

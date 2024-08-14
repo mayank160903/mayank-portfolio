@@ -49,18 +49,17 @@ const Desc = styled.div`
   }
 `;
 
-const Experience = () => {
+const Achievements = () => {
   return (
-    <Container id="Experience">
+    <Container id="Achievements">
       <Wrapper>
-        <Title>Experience</Title>
+        <Title>Achievements</Title>
         <Desc
           style={{
             marginBottom: "40px",
           }}
         >
-          My work experience as a software engineer and working on different
-          companies and projects.
+          Here are some of my past Achievements in my college years
         </Desc>
 
         <VerticalTimeline>
@@ -76,4 +75,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Achievements;

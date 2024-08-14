@@ -97,6 +97,7 @@ const Button = styled.a`
   text-decoration: none;
   font-weight: 600;
   text-align: center;
+  
 `;
 
 const ProjectCard = ({ project }) => {
