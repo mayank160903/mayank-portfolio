@@ -23,7 +23,8 @@ import musicLabs from "../images/musiclabs.png";
 import mmt from "../images/mmt.png"
 import blogApp from "../images/blogapp.png";
 import chatApp from "../images/chatapp.jpg";
-import promptapp from "../images/promptapp.png";
+import i4india from "../images/i4india.png";
+import i4indialogo from "../images/i4indiallogo.png";
 
 export const Bio = {
   name: "Mayank Gupta",
@@ -37,7 +38,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/mayank160903",
   resume:
-    "https://drive.google.com/file/d/1EodI_t43A5htD47mYWfv0qXf8C6ANMqu/view?usp=sharing",
+    "https://drive.google.com/file/d/1EodI_t43A5htD47mYWfv0qXf8C6ANMqu/view",
   linkedin: "https://www.linkedin.com/in/mayank-gupta-619b98249/",
   leetcode: "https://leetcode.com/u/mayank1609/",
 };
@@ -265,27 +266,21 @@ export const experiences = [
     ],
     doc: "",
   },
-  // {
-  //   id: 3,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-  //   role: "Fullstack Externship",
-  //   company: "Flipr",
-  //   date: "June 2023 - July 2023",
-  //   desc: "Built an employee management full stack web app used Docker and deployed on AWS ec2. I was the top performer in the program.",
-  //   skills: [
-  //     "ReactJS",
-  //     "Redux",
-  //     "NodeJs",
-  //     "Material UI",
-  //     "HTML",
-  //     "CSS",
-  //     "JavaScript",
-  //     "Docker",
-  //     "AWS",
-  //     "MongoDB",
-  //   ],
-  //   doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1691181448873.jpeg?alt=media&token=ee85eb8f-7247-43cd-9a1d-ce9f58ea62a6",
-  // },
+  {
+    id: 3,
+    img: i4indialogo,
+    role: "FreeLance Internship",
+    company: "I4India",
+    date: "Aug 2024 - Sept 2024",
+    desc: "Constructed a Next.js Based Web Application for I4India, hosted on vercel. Currently implementing dockerisation and hosting on official i4india domain.",
+    skills: [
+      "Next.js",
+      "Vercel",
+      "Google OAuth 2.0",
+      
+    ],
+    doc: "https://github.com/mayank160903/i4india",
+  },
   // {
   //   id: 4,
   //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/gdsc.jpeg?alt=media&token=c162329c-efaa-4be8-a173-8d3f4c48ea70",
@@ -345,19 +340,19 @@ export const education = [
 export const projects = [
   {
     id: 1,
-    title: "Promptopia",
-    date: "July 2024 - Aug 2024",
+    title: "I4India",
+    date: "Aug 2024 - Sept 2024",
     description:
-      "A Next.js Web Application where a user can upload AI Prompts. Involves all CRUD Operations and OAuth 2.0 for authentication.",
+      "A Next.js Web Application for reading news all over the world. Incremented Google OAuth 2.0 for Sign In/ Sign Up, CRUD operations handled by admin, versatile search engine, and bookmarking functionality.",
     image:
-      promptapp,
+      i4india,
     tags: [
       "Next Js",
       "Google OAuth 2.0",
     ],
     category: "web app",
-    github: "https://github.com/mayank160903/promptapp",
-    webapp: "https://promptapp-sigma.vercel.app/",
+    github: "https://github.com/mayank160903/i4india",
+    webapp: "https://i4india.vercel.app/",
     member: [
       {
         name: "Mayank Gupta",
