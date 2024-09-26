@@ -38,7 +38,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/mayank160903",
   resume:
-    "https://drive.google.com/file/d/1EodI_t43A5htD47mYWfv0qXf8C6ANMqu/view",
+    "https://drive.google.com/file/d/1H831k049-fmmrYPc34kE3FyZM3q3ver6/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/mayank-gupta-619b98249/",
   leetcode: "https://leetcode.com/u/mayank1609/",
 };
