@@ -10,7 +10,7 @@ import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
 import Achievements from "./components/sections/Achievements"
-
+import Experience from "./components/sections/Experience"
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -45,6 +45,7 @@ function App() {
             <Hero />
             <Wrapper>
               <Skills />
+              <Experience />
               <Achievements />
             </Wrapper>
             <Projects />

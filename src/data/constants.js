@@ -27,20 +27,27 @@ import i4india from "../images/i4india.png";
 import i4indialogo from "../images/i4indiallogo.png";
 import blogApp2 from "../images/blogapp2.png"
 import promptApp from "../images/promptapp.png"
+import dockerLogo from "../images/docker-.png";
+import grafanaLogo from "../images/grafana-icon.png";
+import tsLogo from "../images/typescript-logo.png";
+import prismaLogo from "../images/prisma-icon.png";
+import floworksLogo from "../images/floworks-logo.png";
+import jestLogo from "../images/jest-logo.png";
+import reactTestingLogo from "../images/react-testing-library-logo.png";
 
 export const Bio = {
   name: "Mayank Gupta",
   roles: [
-    "Web Developer",
-    "UI/UX Designer",
+    "Software Developer",
+    "Full Stack Developer",
     "Programmer",
-    "MERN Developer"
+    "MERN Stack Developer"
   ],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "I am a motivated and versatile Software Developer, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/mayank160903",
   resume:
-    "https://drive.google.com/file/d/1XkYQxvJurAbKR949GjRy55ZugLZMOJRZ/view?usp=sharing",
+    "https://drive.google.com/file/d/1Elg_M-jeKvn77GvmlunHydbHkTGnmPH7/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/mayank-gupta-619b98249/",
   leetcode: "https://leetcode.com/u/mayank1609/",
 };
@@ -68,6 +75,10 @@ export const skills = [
       {
         name: "JavaScript",
         image: jsLogo
+      },
+      {
+        name: "TypeScript",
+        image: tsLogo
       },
       {
         name: "HTML5",
@@ -127,6 +138,14 @@ export const skills = [
         name: "Three JS",
         image: threeLogo
       },
+      {
+        name: "jest",
+        image: jestLogo
+      },
+      {
+        name: "React Testing Library",
+        image: reactTestingLogo
+      }
     ],
   },
 
@@ -137,6 +156,21 @@ export const skills = [
         name: "AWS S3",
         image:
           "https://download.logo.wine/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.png",
+      },
+      {
+        name: "AWS EC2",
+        image:
+          "https://download.logo.wine/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.png",
+      },
+      {
+        name: "Docker",
+        image:
+          dockerLogo,
+      },
+      {
+        name: "Grafana",
+        image:
+          grafanaLogo,
       },
       {
         name: "Google Cloud",
@@ -168,6 +202,16 @@ export const skills = [
         name: "MySQL",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+      },
+      {
+        name: "PostgreSQL",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
+      },
+      {
+        name: "Prisma",
+        image:
+          prismaLogo,
       },
       {
         name: "MongoDB",
@@ -223,6 +267,81 @@ export const skills = [
   },
 ];
 
+export const experience = [
+  {
+    id: 0,
+    img: floworksLogo,
+    role: "Software Development Internship",
+    company: "Floworks.ai",
+    date: "Jan 2025 - Present",
+    desc: "I worked as a Software Development Intern at Floworks.ai . My role was to work with the engineering team to develop and maintain the company's main product : AI SDR product. I held responsibility for developing new features, debugging and resolving production bugs, testing  the application, and contribute in the growth of the company. I have made some efficient contributions like creating new pages, adding search engines, refactoring code, and identify production level bugs.",
+    skills: [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "AWS S3",
+      "AWS EC2",
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Grafana",
+      "Jest",
+      "React Testing Library",
+    ],
+    doc: "",
+  },
+  {
+    id: 1,
+    img: i4indialogo,
+    role: "FreeLance Internship",
+    company: "I4India",
+    date: "Aug 2024 - Sept 2024",
+    desc: "Constructed a Next.js Based Web Application for I4India, hosted on vercel. Currently implementing dockerisation and hosting on official i4india domain.",
+    skills: [
+      "Next.js",
+      "Vercel",
+      "Google OAuth 2.0",
+    ],
+    doc: "https://github.com/mayank160903/i4india",
+  }
+];
+
+export const education = [
+  {
+    id: 0,
+    img: 
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIZzzc3I5fnnxhbFKjD9ZG5zJo7O_2pcVZyw&s",
+    school: "Indian Institute Of Information and Technology - Sri City (Chittoor)",
+    date: "Dec 2021 - May 2025",
+    grade: "7.50 CGPA",
+    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Indian Institute Of Information and Technology - Sri City . I have completed 7 semesters and I am currently in my 8th Semester (4th Year). I have taken courses in Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the iOTA Tehnical Club at IIITS, where I am learning and working on exciting projects with a team of talented developers.",
+    degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
+  },
+  {
+    id: 1,
+    img: "https://play-lh.googleusercontent.com/4HKjhkQ4aDXssgjxi_aGHBOvDO9kpeNy7bzhMUQG6zKM9bl-_bDO51YqyzUUtZtDLHFO",
+    school: "Parvati RadhaKishen Fomra School, Mathura",
+    date: "Apr 2020 - May 2021",
+    grade: "95.2%",
+    desc: "I completed my class 12 high school education at Parvati RadhaKishen Fomra School, Mathura, where I studied Science with Computer Science.",
+    degree: "CBSE(XII), 12th Board",
+  },
+  {
+    id: 2,
+    img: "https://play-lh.googleusercontent.com/4HKjhkQ4aDXssgjxi_aGHBOvDO9kpeNy7bzhMUQG6zKM9bl-_bDO51YqyzUUtZtDLHFO",
+    school: "Parvati RadhaKishen Fomra School, Mathura",
+    date: "Apr 2018 - Apr 2019",
+    grade: "95.6%",
+    desc: "I completed my class 10 education at Parvati RadhaKishen Fomra School, Mathura.",
+    degree: "CBSE(X), 10th Board",
+  },
+];
+
 export const experiences = [
   {
     id: 0,
@@ -267,76 +386,7 @@ export const experiences = [
       "Management"
     ],
     doc: "",
-  },
-  {
-    id: 3,
-    img: i4indialogo,
-    role: "FreeLance Internship",
-    company: "I4India",
-    date: "Aug 2024 - Sept 2024",
-    desc: "Constructed a Next.js Based Web Application for I4India, hosted on vercel. Currently implementing dockerisation and hosting on official i4india domain.",
-    skills: [
-      "Next.js",
-      "Vercel",
-      "Google OAuth 2.0",
-      
-    ],
-    doc: "https://github.com/mayank160903/i4india",
-  },
-  // {
-  //   id: 4,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/gdsc.jpeg?alt=media&token=c162329c-efaa-4be8-a173-8d3f4c48ea70",
-  //   role: "Android Developer",
-  //   company: "DSC KIIT",
-  //   date: "Nov2021 - Present",
-  //   desc: "As an Android developer at the Google Developers Student Club (GDCS), I have had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Through my involvement with GDCS, I have also had the opportunity to host and participate in numerous events, including hackathons, study jams, and workshops.",
-  //   skills: [
-  //     "Leadership",
-  //     "Mobile Application Development",
-  //     "Kotlin",
-  //     "XML",
-  //     "Figma",
-  //   ],
-  // },
-  // {
-  //   id: 5,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
-  //   role: "Open Source Contributor ",
-  //   company: "GirlScript Summer of Code",
-  //   date: "May 2023 - Present",
-  //   desc: "Contributed to different open-source projects and learn from industry experts",
-  // },
-];
-
-export const education = [
-  {
-    id: 0,
-    img: 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIZzzc3I5fnnxhbFKjD9ZG5zJo7O_2pcVZyw&s",
-    school: "Indian Institute Of Information and Technology - Sri City (Chittoor)",
-    date: "Dec 2021 - May 2025",
-    grade: "7.50 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Indian Institute Of Information and Technology - Sri City . I have completed 6 semesters and I am currently in my 7th Semester (4th Year). I have taken courses in Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the iOTA Tehnical Club at IIITS, where I am learning and working on exciting projects with a team of talented developers.",
-    degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
-  },
-  {
-    id: 1,
-    img: "https://play-lh.googleusercontent.com/4HKjhkQ4aDXssgjxi_aGHBOvDO9kpeNy7bzhMUQG6zKM9bl-_bDO51YqyzUUtZtDLHFO",
-    school: "Parvati RadhaKishen Fomra School, Mathura",
-    date: "Apr 2020 - May 2021",
-    grade: "95.2%",
-    desc: "I completed my class 12 high school education at Parvati RadhaKishen Fomra School, Mathura, where I studied Science with Computer Science.",
-    degree: "CBSE(XII), 12th Board",
-  },
-  {
-    id: 2,
-    img: "https://play-lh.googleusercontent.com/4HKjhkQ4aDXssgjxi_aGHBOvDO9kpeNy7bzhMUQG6zKM9bl-_bDO51YqyzUUtZtDLHFO",
-    school: "Parvati RadhaKishen Fomra School, Mathura",
-    date: "Apr 2018 - Apr 2019",
-    grade: "95.6%",
-    desc: "I completed my class 10 education at Parvati RadhaKishen Fomra School, Mathura.",
-    degree: "CBSE(X), 10th Board",
-  },
+  }
 ];
 
 export const projects = [

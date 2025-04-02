@@ -87,6 +87,7 @@ const Footer = () => {
         <Nav>
           <NavLink href="#About">About</NavLink>
           <NavLink href="#Skills">Skills</NavLink>
+          <NavLink href="#Experience">Experience</NavLink>
           <NavLink href="#Achievements">Achievements</NavLink>
           <NavLink href="#Projects">Projects</NavLink>
           <NavLink href="#Education">Education</NavLink>
@@ -102,7 +103,7 @@ const Footer = () => {
             <Code />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2024 Mayank Gupta. All rights reserved.</Copyright>
+        <Copyright>&copy; 2025 Mayank Gupta. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
