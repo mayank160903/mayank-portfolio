@@ -7,7 +7,6 @@ import {Tilt} from "react-tilt";
 import {motion} from "framer-motion";
 import {headContainerAnimation, headContentAnimation, headTextAnimation} from "../../utils/motion"
 import StarCanvas from '../canvas/Stars';
-import { useState, useEffect } from 'react';
 
 const HeroContainer = styled.div`
 display: flex;
@@ -99,24 +98,28 @@ const TextLoop = styled.div`
   font-weight: 600;
   font-size: 32px;
   display: flex;
-  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 68px;
+  line-height: 1.4;
+  margin-bottom: 16px;
 
   @media (max-width: 960px) {
     text-align: center;
-  }
-
-  @media (max-width: 960px) {
+    justify-content: center;
     font-size: 22px;
-    line-height: 48px;
-    margin-bottom: 16px;
   }
 `;
 
-const Span = styled.div`
+const StaticText = styled.span`
+  white-space: nowrap;
+`;
+
+const Span = styled.span`
   cursor: pointer;
   color: ${({ theme }) => theme.primary};
+  display: inline-block;
 `;
 
 const SubTitle = styled.div`
@@ -152,34 +155,22 @@ const ResumeButton = styled.a`
     hsla(271, 100%, 50%, 1) 0%,
     hsla(294, 100%, 50%, 1) 100%
   );
-  background: -moz-linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
   box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
   border-radius: 50px;
   font-weight: 700;
   font-size: 20px;
   cursor: pointer;
-     &:hover {
-        transform: scale(1.05);
+  &:hover {
+    transform: scale(1.05);
     transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
     filter: brightness(1);
-    }    
+  }    
     
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
-    color: white;
+  @media (max-width: 640px) {
+    padding: 12px 0;
+    font-size: 18px;
+  } 
+  color: white;
 `;
 
 const Img = styled.img`
@@ -220,33 +211,7 @@ const HeroBg = styled.div`
   }
 `;
 
-const VisitCounter = styled.div`
-  margin-top: 20px;
-  font-size: 18px;
-  color: ${({ theme }) => theme.text_secondary};
-
-  @media (max-width: 960px) {
-    text-align: center;
-  }
-`;
-
 const Hero = () => {
-  const [visitCount, setVisitCount] = useState(0);
-
-  useEffect(() => {
-    // Get the current count from localStorage
-    const visits = localStorage.getItem('visitCount');
-
-    if (visits) {
-      const newCount = parseInt(visits) + 1;
-      localStorage.setItem('visitCount', newCount);
-      setVisitCount(newCount);
-    } else {
-      // First visit
-      localStorage.setItem('visitCount', 1);
-      setVisitCount(1);
-    }
-  }, []);
   return (
     <div id="about">
       <HeroContainer>
@@ -261,10 +226,10 @@ const Hero = () => {
 
             <motion.div {...headTextAnimation}>
 
-            
             <Title>Hi, I am <br/> {Bio.name}</Title>
             <TextLoop>
-              I am a <Span>
+              <StaticText>I am a</StaticText>
+              <Span>
                 <Typewriter 
                 options={{
                   strings: Bio.roles,
@@ -280,8 +245,6 @@ const Hero = () => {
               <SubTitle>{Bio.description}</SubTitle>
             </motion.div>
             <ResumeButton href={Bio.resume}>Check Resume</ResumeButton>
-
-            <VisitCounter>Total Visits: {visitCount}</VisitCounter>
           </HeroLeftContainer>
           <HeroRightContainer>
             <motion.div {...headContainerAnimation}>
@@ -297,4 +260,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;
